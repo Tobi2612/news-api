@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: lorem
+      POSTGRES_PASSWORD: ipsum
+      POSTGRES_DB: techninover_solution
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+volumes:
+  postgres:
+
